@@ -139,44 +139,37 @@ const LoanList = () => {
 
                                 <Button
                                     variant="contained"
-                                    color="error"
                                     size="small"
                                     onClick={() => handleCosts(loan.id)}
                                     style={{ marginLeft: "0.5rem" }}
-                                    startIcon={<DeleteIcon />}
                                 >
                                     Costs
                                 </Button>
 
                                 <Button
                                     variant="contained"
-                                    color="error"
                                     size="small"
                                     onClick={() => handleCancel(loan.id)}
                                     style={{ marginLeft: "0.5rem" }}
-                                    startIcon={<DeleteIcon />}
                                 >
                                     Cancel
                                 </Button>
 
                                 <Button
                                     variant="contained"
-                                    color="error"
                                     size="small"
                                     onClick={() => handleEdit(loan.id, loan.state)}
                                     style={{ marginLeft: "0.5rem" }}
-                                    startIcon={<DeleteIcon />}
                                 >
                                     Edit
                                 </Button>
 
                                 <Button
                                     variant="contained"
-                                    color="error"
+                                    color="success"
                                     size="small"
                                     onClick={() => handleApprove(loan.id, loan.state)}
                                     style={{ marginLeft: "0.5rem" }}
-                                    startIcon={<DeleteIcon />}
                                 >
                                     Approve
                                 </Button>

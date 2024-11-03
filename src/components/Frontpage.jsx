@@ -3,7 +3,7 @@ const Frontpage = () => {
     <div>
       <h1>MORTGAGE APP</h1>
       <p>
-        Description
+          For the management and provision of loan services. Simulate your credit, submit your loan applications, check costs and more
       </p>
     </div>
 

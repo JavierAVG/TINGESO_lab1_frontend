@@ -77,11 +77,9 @@ const LoanEvaluationList = () => {
                             <TableCell>
                                 <Button
                                     variant="contained"
-                                    color="error"
                                     size="small"
                                     onClick={() => handleEvaluate(loan.id)}
                                     style={{ marginLeft: "0.5rem" }}
-                                    startIcon={<DeleteIcon />}
                                 >
                                     Evaluate
                                 </Button>

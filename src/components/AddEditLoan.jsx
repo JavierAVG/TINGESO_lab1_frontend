@@ -116,8 +116,8 @@ const AddEditLoan = () => {
                         .update(response.data.id,ids,salaries,withdrawals,deposits)
                         .then((response) => {
                             console.log("Savings have been updated.", response.data);
+                            navigate(`/client/${idClient}/loanlist`);
                         })
-                    //navigate("/loan/list");
                 }).catch((error) => {
                     console.log(
                         "There has been an error updating the loan.",
@@ -132,8 +132,8 @@ const AddEditLoan = () => {
                         .create(response.data.id,salaries,withdrawals,deposits)
                         .then((response) => {
                             console.log("Savings have been added.", response.data);
+                            navigate(`/client/${idClient}`);
                         })
-                    //navigate("/loan/list");
                 }).catch((error) => {
                     console.log(
                         "There has been an error adding the loan.",
@@ -387,16 +387,6 @@ const AddEditLoan = () => {
             Save
             </Button>
             <hr/>
-            <Button
-                variant="contained"
-                color="info"
-                size="small"
-                onClick={() => navigate(`/client/${idClient}/loanlist`)}
-                style={{marginLeft: "0.5rem"}}
-                startIcon={<EditIcon/>}
-            >
-                Back to list
-            </Button>
         </Box>
     );
 
