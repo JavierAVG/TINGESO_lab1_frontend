@@ -119,7 +119,7 @@ const SimulateMonthlyFee = () => {
                 style={{marginLeft: "0.5rem"}}
                 startIcon={<CalculateIcon/>}
             >
-                Simulate
+                SIMULAR CREDITO (CHILE)
             </Button>
             <hr/>
             <Typography variant="h5" gutterBottom> YOUR MONTHLY FEE: {monthlyFee} </Typography>
